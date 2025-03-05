@@ -1,0 +1,25 @@
+
+<h2>{{ "Info"|t('flow') }}</h2>
+
+<table class="data fullwidth fixed-layout" dir="ltr">
+    <tbody>
+    {% for label, value in checks %}
+        <tr>
+            <th class="light">{{ label }}</th>
+            <td><code>{{ value }}</code></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<h2>{{ "Queue Test"|t('flow') }}</h2>
+
+<form class="utility" method="post" accept-charset="UTF-8">
+    {{ redirectInput('utilities/flow-test') }}
+    {{ csrfInput() }}
+    <input type="hidden" name="action" value="flow/test/run">
+    <input type="hidden" name="utility" value="1">
+    <input type="submit" class="btn submit" value="{{ "Run test"|t('flow') }}"/>
+    <a class="btn" onclick="window.location.reload();">{{ "Refresh"|t('flow') }}</a>
+
+</form>
