@@ -2,8 +2,14 @@
     "name": "ferventdigital/flow",
     "description": "A lightweight Craft CMS plugin that intelligently manages queue workers, preventing server overload by limiting concurrent jobs and ensuring smooth task execution.",
     "type": "craft-plugin",
-    "license": "mit",
+    "license": "proprietary",
     "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Fervent Digital",
+            "homepage": "https://fervent.digital/"
+        }
+    ],
     "support": {
         "email": "support@fervent.digital"
     },
@@ -20,7 +26,8 @@
         "handle": "flow",
         "name": "Flow",
         "developer": "Fervent Digital",
-        "documentationUrl": "",
+        "developerUrl": "https://www.fervent.digital/",
+        "documentationUrl": "https://github.com/ferventdigital/flow",
         "class": "ferventdigital\\flow\\Flow"
     },
     "config": {
