@@ -15,26 +15,14 @@ use yii\queue\PushEvent;
  * @method static Flow getInstance()
  * @author Fervent Digital <support@fervent.digital>
  * @copyright Fervent Digital
- * @license MIT
  */
 class Flow extends Plugin
 {
     public string $schemaVersion = '1.0.0';
 
-    public static function config(): array
-    {
-        return [
-            'components' => [
-                // Define component configs here...
-            ],
-        ];
-    }
-
     public function init(): void
     {
         parent::init();
-
-        $this->attachEventHandlers();
 
         Craft::$app->getConfig()->getGeneral()->runQueueAutomatically = false;
 
@@ -66,11 +54,5 @@ class Flow extends Plugin
         );
 
         Utility::setup($this);
-    }
-
-    private function attachEventHandlers(): void
-    {
-        // Register event handlers here ...
-        // (see https://craftcms.com/docs/4.x/extend/events.html to get started)
     }
 }

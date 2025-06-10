@@ -5,17 +5,20 @@
     "license": "proprietary",
     "version": "1.0.0",
     "authors": [
-        {
-            "name": "Fervent Digital",
-            "homepage": "https://fervent.digital/"
-        }
+      {
+          "name": "Fervent Digital",
+          "homepage": "https://fervent.digital/"
+      }
     ],
     "support": {
-        "email": "support@fervent.digital"
+        "email": "support@fervent.digital",
+        "issues": "https://github.com/ferventdigital/flow/issues?state=open",
+        "source": "https://github.com/ferventdigital/flow",
+        "docs": "https://github.com/ferventdigital/flow"
     },
     "require": {
-        "php": ">=8.0.2",
-        "craftcms/cms": "^4.10.0"
+        "php": ">=8.2",
+        "craftcms/cms": "^5.0.0"
     },
     "autoload": {
         "psr-4": {
@@ -25,20 +28,8 @@
     "extra": {
         "handle": "flow",
         "name": "Flow",
-        "developer": "Fervent Digital",
-        "developerUrl": "https://www.fervent.digital/",
-        "documentationUrl": "https://github.com/ferventdigital/flow",
+        "changelogUrl": "https://raw.githubusercontent.com/ferventdigital/flow/refs/heads/main/CHANGELOG.md",
         "class": "ferventdigital\\flow\\Flow"
-    },
-    "config": {
-        "sort-packages": true,
-        "platform": {
-            "php": "8.0.2"
-        },
-        "allow-plugins": {
-            "yiisoft/yii2-composer": true,
-            "craftcms/plugin-installer": true
-        }
     }
 }
 
