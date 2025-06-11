@@ -3,7 +3,7 @@
     "description": "A lightweight Craft CMS plugin that intelligently manages queue workers, preventing server overload by limiting concurrent jobs and ensuring smooth task execution.",
     "type": "craft-plugin",
     "license": "proprietary",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "authors": [
       {
           "name": "Fervent Digital",
